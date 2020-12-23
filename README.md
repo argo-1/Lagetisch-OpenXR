@@ -1,10 +1,8 @@
-# OpenXR Samples for Mixed Reality Developers
+# Lagetisch
 
-This repository contains OpenXR code samples tailored for developers who are familiar with and using the Visual Studio toolchain, e.g. HoloLens 2 developers.
+Visual Studio Solution located at apps\Lagetisch\Lagetisch.sln
 
-These OpenXR samples use C++17 and D3D11. The same source code works across UWP applications running on HoloLens 2 and Win32 applications running on Windows Desktop with Windows Mixed Reality immersive headsets.
-
-# Prepare, build and run the samples
+# Prepare, build and run
 
 - Understand [what is OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr#what-is-openxr)
 and [why OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr#why-openxr).
@@ -18,10 +16,9 @@ If you will be deploying to a HoloLens 2, you should install [Visual Studio 2019
 - Prepare a [HoloLens 2 device](https://docs.microsoft.com/windows/mixed-reality/openxr#getting-started-with-openxr-for-hololens-2)
 or [Windows Mixed Reality device](https://docs.microsoft.com/windows/mixed-reality/openxr#getting-started-with-openxr-for-windows-mixed-reality-headsets).
 
-- Clone the samples repo: `git clone https://github.com/microsoft/OpenXR-MixedReality.git`
+- These OpenXR programs use C++17 and D3D11. The same source code works across UWP applications running on HoloLens 2 and Win32 applications running on Windows Desktop with Windows Mixed Reality immersive headsets.
 
-- Open the `BasicXrApp.sln` or `Samples.sln` file in Visual Studio. F5 to build and run the sample.
-You typically choose ARM64 platform when running on HoloLens 2 devices,
+- You typically choose ARM64 platform when running on HoloLens 2 devices,
 or choose x64 platform when running on a Windows Desktop PC with the HoloLens 2 Emulator or a Windows Mixed Reality immersive headset (or simulator).
 
 # OpenXR preview extensions
@@ -32,11 +29,6 @@ The [openxr_preview](https://github.com/microsoft/OpenXR-MixedReality/tree/maste
 
 1. [XR_MSFT_scene_understanding_serialization_preview](https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_scene_understanding_serialization_preview)
 
-Please send feedback on preview extensions and samples at [GitHub issues](https://github.com/microsoft/OpenXR-MixedReality/issues).
-We are planning to incorporate your feedback and finalize these extensions as vendor extensions (MSFT) or cross-vendor extensions (EXT)
-in the central Khronos OpenXR [headers](https://github.com/KhronosGroup/OpenXR-SDK/tree/master/include/openxr)
-and [spec](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html)
-over the coming months.
 
 # OpenXR samples and extension usages
 
@@ -85,16 +77,3 @@ The [BasicXrApp](https://github.com/microsoft/OpenXR-MixedReality/tree/master/sa
 
 For more detailed information on getting the best visual quality and performance on HoloLens 2, see the [best practices for HoloLens 2](https://aka.ms/openxr-best).
 
-# Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
-
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
