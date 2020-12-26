@@ -164,6 +164,7 @@
     <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ShaderGraphContentTask.targets" />
     <Import Project="..\..\packages\OpenXR.Headers.1.0.10.2\build\native\OpenXR.Headers.targets" Condition="Exists('..\..\packages\OpenXR.Headers.1.0.10.2\build\native\OpenXR.Headers.targets')" />
     <Import Project="..\..\packages\OpenXR.Loader.1.0.10.2\build\native\OpenXR.Loader.targets" Condition="Exists('..\..\packages\OpenXR.Loader.1.0.10.2\build\native\OpenXR.Loader.targets')" />
+    <Import Project="..\..\packages\Microsoft.Holographic.Remoting.OpenXr.2.4.0\build\native\Microsoft.Holographic.Remoting.OpenXr.targets" Condition="Exists('..\..\packages\Microsoft.Holographic.Remoting.OpenXr.2.4.0\build\native\Microsoft.Holographic.Remoting.OpenXr.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -173,5 +174,6 @@
     <Error Condition="!Exists('..\..\packages\OpenXR.Headers.1.0.10.2\build\native\OpenXR.Headers.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\OpenXR.Headers.1.0.10.2\build\native\OpenXR.Headers.targets'))" />
     <Error Condition="!Exists('..\..\packages\OpenXR.Loader.1.0.10.2\build\native\OpenXR.Loader.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\OpenXR.Loader.1.0.10.2\build\native\OpenXR.Loader.props'))" />
     <Error Condition="!Exists('..\..\packages\OpenXR.Loader.1.0.10.2\build\native\OpenXR.Loader.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\OpenXR.Loader.1.0.10.2\build\native\OpenXR.Loader.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Microsoft.Holographic.Remoting.OpenXr.2.4.0\build\native\Microsoft.Holographic.Remoting.OpenXr.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Holographic.Remoting.OpenXr.2.4.0\build\native\Microsoft.Holographic.Remoting.OpenXr.targets'))" />
   </Target>
 </Project>
